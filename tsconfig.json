@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES2022", // Modern JS output
+        "module": "NodeNext", // Native Node ESM module handling
+        "moduleResolution": "NodeNext", // Match Node’s ESM resolution
+        "lib": ["ES2022"], // Available APIs
+        "outDir": "./dist", // Compiled output folder
+        "rootDir": "./src", // Source folder
+        "strict": true, // Strong type checking
+        "esModuleInterop": true, // Allow CommonJS interoperability
+        "skipLibCheck": true, // Skip library type checks
+        "forceConsistentCasingInFileNames": true, // Enforce file name casing
+        "resolveJsonModule": true, // Allow importing JSON files
+        "declaration": true, // Generate .d.ts files
+        "declarationMap": true, // Source maps for declarations
+        "sourceMap": true, // Source maps for debugging
+        "removeComments": true, // Clean JS output
+        "isolatedModules": true, // Safer compilation per file
+        "noEmitOnError": true, // Don’t emit JS if TS has errors
+        "typeRoots": ["./src/types", "./node_modules/@types"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
